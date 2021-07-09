@@ -1,0 +1,104 @@
+https://www.8host.com/blog/nachalnaya-nastrojka-servera-ubuntu-18-04/
+https://itsecforu.ru
+
+https://habr.com/ru/post/501442/
+
+
+
+./standalone.sh                                   запустили скрипт, если мы в той же директории
+service test start                                запустить сервис под названием «test»
+service test stop                                 остановить сервис
+
+
+systemctl start redis
+systemctl stop redis
+systemctl status redis
+systemctl enable redis
+
+service test start                     запустить сервис под названием «test»
+service test stop                      остановить сервис
+chkconfig test on                      добавит службу в автозапуск           
+
+
+
+
+
+hostname -I
+ifconfig
+
+
+
+
+
+
+
+
+первая_команда && вторая_команда
+
+alias длинная_команда короткая_команда
+
+man имя_пакета
+
+
+sudo su
+sudo !!
+
+kill PID_процесса
+killall firefox
+
+whoami
+useradd имя_пользователя
+userdel Удаляет учётную запись и файлы пользователя.
+usermod
+passwd
+
+
+less
+$ ps опции | grep параметр
+
+time
+
+
+
+===== HOTKEYS in terminal ====================================================
+ctrl k     cut line on right side of cursor
+ctrl u     cut all line
+ctrl y     paste
+ctrl w     cut word
+
+ctrl r     serach in history
+
+ctrl l     clear
+
+
+ctrl h
+ctrl j
+
+
+ctrl a      go to beginning line
+ctrl e      go to end
+alt b       go back 1 word
+alt f       go forward 1 word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

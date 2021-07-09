@@ -1,0 +1,11 @@
+version: "3.9"
+
+services: 
+  node1:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    stdin_open: true # docker run -i
+    tty: true        # docker run -t
+    ports:
+      - "52021:22"
