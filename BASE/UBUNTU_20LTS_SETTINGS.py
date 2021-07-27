@@ -150,8 +150,9 @@ need to install FozyProxy
 add new Proxy: SOCKS5   localhost:9050
 add pettern: white pattern: linkedin  linkedin.com
 
-
-
+===== FOR PROGRAMMING: 
+sudo apt install nodejs
+sudo apt install npm
 
 
 
