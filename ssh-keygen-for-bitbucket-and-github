@@ -1,0 +1,31 @@
+git config --global user.name "Username"
+git config --global user.email "Your@gmail.com"
+git config --global init.defaultBranch master
+git config -l                                       # посмотреть весь конфиг
+
+
+# ===== Generate encrypted keys for bitbucket
+# -N - type of encryption for bitbucket
+# -f path/filename
+# /home/username/.ssh/bitbucket.pub
+ssh-keygen -t rsa -b 4096 -P YourPassphrase -f ~/.ssh/bitbucket
+
+# add private key to agent
+ssh-add ~/.ssh/bitbucket
+ssh-add -l 
+eval $(ssh-agent -s)
+
+# create config and change permissions
+touch ~/.ssh/config                                                                                                                                               
+Host bitbucket.org
+ IdentityFile ~/.ssh/bitbucket
+
+chmod 600 ~/.ssh/config
+
+# copy and paste in bitbucket
+cat ~/.ssh/bitbucket.pub
+
+# try to connect
+ssh -T git@github.com
+ssh -T git@bitbucket.org
+ssh -T git@gitlab.com
