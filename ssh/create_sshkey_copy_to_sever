@@ -1,0 +1,4 @@
+# ===== SSH KEY AUthetication
+ssh-keygen -t rsa -b 4096 -f ~/.ssh/KEYNAME_rsa
+
+cat ~/.ssh/KEYNAME_rsa.pub | ssh USER@SERVERIP "mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys && chmod -R go= ~/.ssh && cat >> ~/.ssh/authorized_keys"
